@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('water.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: #b9dbff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #ff4242;
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+.button-container {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.results-container {
+    display: flex;
+    overflow-y: auto;
+    max-height: 270px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #007BFF #f4f4f4;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #007BFF;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f4f4f4;
+    }
+}
+
+
+.result {
+    margin-right: 20px;
+    overflow-y: auto;
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+.container-with-image {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 10px; /* Ajusta el margen según sea necesario */
+    max-height: 30px; /* Ajusta la altura máxima según sea necesario */
+}
+
+
+/* Agrega estos estilos para centrar y hacer responsive el botón */
+#clearButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #dc3545; /* Puedes cambiar el color de fondo según tus preferencias */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el ratón */
+}
+
+#clearButton:hover {
+    background-color: #c82333; /* Cambia el color de fondo al pasar el ratón */
+}
